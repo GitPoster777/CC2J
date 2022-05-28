@@ -1,7 +1,7 @@
 package main
 
 import(
-	"fmt"
+	"net/http"
 	"github.com/gorilla/mux"
 )
 type homework struct {
@@ -20,5 +20,6 @@ var h = Allhomeworks{
 	},
 }
 func main() {
-	fmt.Println("Hello world Champ")
+	x := mux.NewRouter()
+	x.HandleFunc("/",)
 }
