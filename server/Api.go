@@ -2,7 +2,6 @@ package main
 
 import(
 	"fmt"
-	"net/http"
 )
 type homework struct {
 	ID int `json:"ID"`
@@ -17,5 +16,5 @@ type Ahomework struct {
 
 
 func main() {
-	
+	fmt.Println("Hello world Champ")
 }
