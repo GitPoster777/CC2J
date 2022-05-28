@@ -9,10 +9,7 @@ type homework struct {
 	content string`json:content`
 }
 
-type Ahomework struct {
-	Clear string `json:Clear`
-
-}
+type Allhomeworks[]homework 
 
 
 func main() {
