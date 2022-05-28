@@ -2,6 +2,7 @@ package main
 
 import(
 	"fmt"
+	"github.com/gorilla/mux"
 )
 type homework struct {
 	ID int `json:"ID"`
@@ -11,12 +12,12 @@ type homework struct {
 
 type Allhomeworks []homework 
 
-Allhomeworks{
+var h = Allhomeworks{
 	{
 		ID: 1,
-		Name: "First task"
-		Content: "Cont"
-	}
+		Name: "First task",
+		Content: "Cont", 
+	},
 }
 func main() {
 	fmt.Println("Hello world Champ")
