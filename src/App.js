@@ -1,10 +1,21 @@
-import './App.css';
+import React, { useState } from "react";
+import { NavBar, Select } from "./components";
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+export default function App() {
+    const [from, setFrom] = useState("json");
+    const [to, setTo] = useState("yaml");
 
-export default App;
+    return (
+        <>
+            <NavBar />
+            <div className="container">
+                <div className="from">
+                    <Select callback={ setFrom } active={ to } />
+                </div>
+                <div className="to">
+                    <Select callback={ setTo } active={ from } />
+                </div>
+            </div>
+        </>
+    );
+};

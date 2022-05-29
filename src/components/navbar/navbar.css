@@ -1,0 +1,35 @@
+header#NavBar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+header#NavBar div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 2.5vw;
+    cursor: pointer;
+}
+
+header#NavBar div.logo * {
+    display: inline-block;
+    font-size: calc(1.5rem + 2vw);
+    font-weight: bold;
+    color: #F4F9FF;
+    width: 100%;
+    margin-right: .5vw;
+    transition: all .3s ease-out;
+}
+
+header#NavBar div.logo:hover p {
+    color: #4B90F8;
+}
+
+header#NavBar div.logo:hover p:nth-child(2) {
+    margin-left: -1.75vw;
+    transform: translateX(10.5ch);
+}
